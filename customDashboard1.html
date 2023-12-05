@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="sidebar">
+                    <div class="offcanvas offcanvas-start show" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header border-bottom justify-content-center">
+                            <div class="text-center">
+                                <img src="./assests/images/main_logo.png" alt="logo" width="40">
+                                <h1 class="text-capitalize fs-5 text-white">registration</h1>
+                            </div>
+                            <a href="javascript:void(0);" class="sidebarCloseBtn" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                        </div>
+                        <div class="offcanvas-body mb-3">
+                            <p class="active">Dashboard</p>
+
+                            <p onclick="sidebarList('dropdownToggle')" class="dropdown-toggle  text-decoration-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="dropdownToggle">
+                                link 1
+                                <div class="collapse" id="collapseExample">
+                                    <ul class="list-unstyled ps-3">
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 1</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 2</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </p>
+
+                            <p onclick="sidebarList('dropdownToggle1')" class="dropdown-toggle  text-decoration-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1" id="dropdownToggle1">
+                                link 2
+                                <div class="collapse" id="collapseExample1">
+                                    <ul class="list-unstyled ps-3">
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 1</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 2</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </p>
+
+                            <p onclick="sidebarList('dropdownToggle2')" class="dropdown-toggle text-decoration-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" id="dropdownToggle2">
+                                link 3
+                                <div class="collapse" id="collapseExample2">
+                                    <ul class="list-unstyled ps-3">
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 1</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 2</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </p>
+
+                            <p onclick="sidebarList('dropdownToggle3')" class="dropdown-toggle text-decoration-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" id="dropdownToggle3">
+                                link 4
+                                <div class="collapse" id="collapseExample3">
+                                    <ul class="list-unstyled ps-3">
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 1</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 2</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </p>
+
+                            <p onclick="sidebarList('dropdownToggle4')" class="dropdown-toggle  text-decoration-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4" id="dropdownToggle4">
+                                link 5
+                                <div class="collapse" id="collapseExample4">
+                                    <ul class="list-unstyled ps-3">
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 1</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 2</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-decoration-none">Page 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="offcanvas-footer px-2 py-3">
+                            <h5 class="mb-0 ps-2">
+                                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 mainDashboard">
+                <div class="row justify-content-between align-items-center py-2 mb-5 px-sm-4 px-3 bg-white">
+                    <div class="col-3 ps-0">
+                        <div class="d-flex align-items-center">
+                            <button class="btn sidebarOpenBtn ps-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list fs-1"></i></button>
+                            <h3 class="mb-0" style="font-weight: 600;">Dashboard</h3>
+                        </div>
+                    </div>
+                    <div class="col-5 dashBoardSearch">
+                        <div class="input-group">
+                            <span class="input-group-text bg-transparent"><i class="bi bi-search"></i></span>
+                            <input type="search" class="form-control border-start-0" id="exampleInputSearch1" aria-describedby="searchHelp" placeholder="Search">
+                        </div>
+                    </div>
+
+                    <div class="col-2 text-end pe-0">
+                        <div class="dropdown">
+                            <img src="rai.jpeg" alt="profile pic" class="img-fluid rounded profilePicDashboard" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mb-5">
+                    <div class="row">
+                        <div class="col-md-3 col-6 mb-3">
+                            <div class="card h-100 justify-content-center border-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <div class="card-header bg-transparent border-bottom-0">
+                                            <h2 class="mainDashboardCardNumbers text-black fs-2">07</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="mb-0 mainDashboardTitle">Property Transfered in Sindh <span class="fs-4">2023</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3">
+                                        <i class="bi bi-graph-up-arrow fs-1 mainDashboardCardIcons mainDashboardCardIcons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <div class="card h-100 justify-content-center border-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <div class="card-header bg-transparent border-bottom-0">
+                                            <h2 class="mainDashboardCardNumbers text-black fs-2">0746</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="mb-0 mainDashboardTitle">Property Transfered in Sindh <span class="fs-4">2022</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3">
+                                        <i class="bi bi-graph-up-arrow fs-1 mainDashboardCardIcons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <div class="card h-100 justify-content-center border-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <div class="card-header bg-transparent border-bottom-0">
+                                            <h2 class="mainDashboardCardNumbers text-black fs-2">07</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="mb-0 mainDashboardTitle">Property Transfered in Sindh <span class="fs-4">2021</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3">
+                                        <i class="bi bi-graph-up-arrow fs-1 mainDashboardCardIcons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <div class="card h-100 justify-content-center border-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <div class="card-header bg-transparent border-bottom-0">
+                                            <h2 class="mainDashboardCardNumbers text-black fs-2">07</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="mb-0 mainDashboardTitle">Property Transfered in Sindh <span class="fs-4">2020</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3">
+                                        <i class="bi bi-graph-up-arrow fs-1 mainDashboardCardIcons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <figure class="highcharts-figure">
+                                <div id="container"></div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body pt-5">
+                    <h4 class="text-center">Are you Sure you want to Log Out?</h4>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">LogOut</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script>
+        window.addEventListener('resize', function() {
+            let offcanvas = document.querySelector('.offcanvas');
+            if (window.innerWidth > 768) {
+                offcanvas.classList.add('show');
+                offcanvas.setAttribute("data-bs-backdrop", "false");
+            } else if (window.innerWidth <= 768) {
+                offcanvas.classList.remove('show');
+                offcanvas.setAttribute("data-bs-backdrop", "true");
+            }
+        });
+
+        function sidebarList(id) {
+            var dropdownToggle = document.getElementById(id);
+            if (dropdownToggle) {
+                dropdownToggle.classList.toggle('rotate');
+            } else {
+                console.error("Element with id '" + id + "' not found.");
+            }
+        }
+
+
+        // high charts
+        (async() => {
+
+            const data = await fetch(
+                'https://cdn.jsdelivr.net/gh/highcharts/highcharts@v10.3.3/samples/data/usdeur.json'
+            ).then(response => response.json());
+
+            Highcharts.chart('container', {
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'USD to EUR exchange rate over time',
+                    align: 'left'
+                },
+                subtitle: {
+                    text: document.ontouchstart === undefined ?
+                        'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in',
+                    align: 'left'
+                },
+                xAxis: {
+                    type: 'datetime'
+                },
+                yAxis: {
+                    title: {
+                        text: 'Exchange rate'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            // stops: [
+                            //     [0, Highcharts.getOptions().colors[0]],
+                            //     [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            // ]
+                            stops: [
+                                [0, 'rgba(0, 181, 76, 1)'], // Change this color
+                                [1, 'rgba(64, 142, 59, 1)'] // Change this color
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null,
+                        color: 'rgba(64, 142, 59, 1)' // the color of lines only
+                    }
+                },
+
+                series: [{
+                    type: 'area',
+                    name: 'USD to EUR',
+                    data: data
+                }]
+            });
+        })();
+    </script>
+</body>
+
+</html>
