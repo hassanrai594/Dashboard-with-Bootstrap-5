@@ -170,6 +170,10 @@
     color: var(--card-icon-color);
 }
 
+.offcanvas-backdrop {
+    display: none !important;
+}
+
 @media screen and (max-width:1024px) {
     .active::before {
         left: -11.5%;
@@ -193,6 +197,9 @@
     }
     .offcanvas {
         width: 30% !important;
+    }
+    .offcanvas-backdrop {
+        display: unset !important;
     }
 }
 
